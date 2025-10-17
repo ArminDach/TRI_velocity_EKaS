@@ -1,2 +1,2 @@
 # TRI_velocity_EKaS
-High spatio-temporal summer velocity variations of a Greenlandic tidewater outlet glacier
+High spatio-temporal velocity variations driven by water input at a Greenlandic tidewater glacier

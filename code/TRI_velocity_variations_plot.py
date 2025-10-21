@@ -103,7 +103,7 @@ start_time_all2 =  (start_time_all + datetime.timedelta(days=1)).replace(hour=0,
 end_time_all2 =  end_time_all.replace(hour=0, minute=0, second=0, microsecond=0)
 
 #load Narsarsuaq weather station data for wind 
-fn= print("data provided by Caroline Drost Jensen: https://www.dmi.dk/publikationer/ Weather Observations from Greenland 1958-2024, Narsarsuaq ID: 4270" )
+print("data provided by Caroline Drost Jensen: https://www.dmi.dk/publikationer/ Weather Observations from Greenland 1958-2024, Narsarsuaq ID: 4270" )
 df_AWS = pd.read_csv(fn, sep=";", dtype="float64")
 df_AWS.columns=["station", "year", "month", "day", "hour", "Temp", "Tmax_1h", "T_max_12h","Tmin_1h", "T_min_12h", "RH", "veloc", "vmax_3s", "wd", "wd_1h", "p", "sun_dur", "in_globrad", "prec_1h", "prec_12h", "prec_24h", "cloud_cov" ]
 df_AWS["date"]=pd.to_datetime(dict(year=df_AWS.year, month=df_AWS.month, day=df_AWS.day, hour=df_AWS.hour, minute=0))
